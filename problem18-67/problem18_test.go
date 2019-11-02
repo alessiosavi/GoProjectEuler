@@ -40,8 +40,16 @@ func TestFindPathByIndex(t *testing.T) {
 
 func TestProblem67(t *testing.T) {
 	matrix := LoadBigDataInMatrix(problem67)
-	BacktrackMatrix(matrix)
+	t.Log(BacktrackMatrix(matrix))
 }
+func BenchmarkProblem67(t *testing.B) {
+	matrix := LoadBigDataInMatrix(problem67)
+	t.ResetTimer()
+	for i := 0; i < t.N; i++ {
+		BacktrackMatrix(matrix)
+	}
+}
+
 func TestProblem18(t *testing.T) {
 	matrix := LoadBigDataInMatrix(data)
 	BacktrackMatrix(matrix)

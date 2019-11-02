@@ -144,7 +144,7 @@ func max(n, m int) int {
 		return m
 	}
 }
-func BacktrackMatrix(matrix [][]int) {
+func BacktrackMatrix(matrix [][]int) int {
 	// Go the the last-1 line
 
 	// Find the max between the two child and add to the current node
@@ -156,8 +156,7 @@ func BacktrackMatrix(matrix [][]int) {
 			matrix[i][j] = matrix[i][j] + _max
 		}
 	}
-	matrix[0][0] = matrix[0][0] + max(matrix[1][0], matrix[1][1])
-	log.Println(matrix[0][0])
+	return matrix[0][0] + max(matrix[1][0], matrix[1][1])
 }
 
 func RemoveWhiteSpaceString(str string) string {
