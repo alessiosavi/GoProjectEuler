@@ -8,7 +8,6 @@ import (
 )
 
 func Problem16(n float64) {
-
 	number := math.Pow(2, n)
 	log.Println(number)
 	m := fmt.Sprintf("%f", number)
@@ -18,5 +17,4 @@ func Problem16(n float64) {
 		sum += data
 	}
 	log.Println(sum)
-
 }
