@@ -119,10 +119,10 @@ func SumDiagonalInverse(matrix [][]int) int {
 	var result []int
 	for row := 0; row < rowMax; row++ {
 		for col := colMax; col > step; col-- {
-			log.Println("___________")
+			//log.Println("___________")
 			sum := 1
 			for rIndex, cIndex := row, col; rIndex <= row+step && cIndex >= col-step; rIndex, cIndex = rIndex+1, cIndex-1 {
-				log.Println(matrix[rIndex][cIndex])
+				//log.Println(matrix[rIndex][cIndex])
 				sum *= matrix[rIndex][cIndex]
 			}
 			result = append(result, sum)

@@ -9,5 +9,5 @@ import (
 )
 
 func TestGenerateFibonacci(t *testing.T) {
-	GenerateFibonacci(1000)
+	GenerateFibonacci(4000000)
 }

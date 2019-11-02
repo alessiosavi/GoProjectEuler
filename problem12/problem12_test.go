@@ -11,5 +11,9 @@ func TestGenerateTriangularNumber(t *testing.T) {
 }
 
 func TestBruteForceDivisor(t *testing.T) {
-	t.Log(BruteForceDivisor(16))
+	t.Log(BruteForceDivisor(1000))
+}
+
+func TestWin(t *testing.T) {
+	Win()
 }

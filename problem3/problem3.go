@@ -4,7 +4,6 @@
 package problem3
 
 import (
-	"log"
 	"math"
 )
 
@@ -13,19 +12,16 @@ func CalculateMaxPrimeFactor(n int64) int64 {
 	var maxPrime int64 = -1
 	var i int64
 	for n%2 == 0 {
-		maxPrime = 2
-		n >>= 1 // -> n/=2
+		n /= 2
 	}
 
 	for i = 3; float64(i) <= math.Sqrt(float64(n)); i += 2 {
 		for n%i == 0 {
-			maxPrime = i
 			n = n / i
 		}
 	}
 	if n > 2 {
 		maxPrime = n
 	}
-	log.Println(maxPrime)
 	return maxPrime
 }

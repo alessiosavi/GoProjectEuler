@@ -28,12 +28,12 @@ const data string = `73167176531330624919225119674426574742355349194934
 71636269561882670428252483600823257530420752963450`
 
 func SplitStringInArray(str string) []int {
-	parsed := strings.ReplaceAll(data, "\n", "")
+	parsed := strings.ReplaceAll(str, "\n", "")
 	var array []int = make([]int, len(parsed))
 	for i, r := range parsed {
 		array[i] = int(r - '0')
 	}
-	log.Println(array)
+	//log.Println(array)
 	return array
 }
 
@@ -58,7 +58,6 @@ func MultiplyNearestNumber(array []int, number int) int {
 	}
 
 	sort.Ints(total)
-	log.Println(total)
-	return -1
-
+	log.Println(total[len(total)-1])
+	return total[len(total)-1]
 }

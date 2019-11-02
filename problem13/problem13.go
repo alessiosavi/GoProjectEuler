@@ -1,7 +1,6 @@
 package problem13
 
 import (
-	"log"
 	"strconv"
 	"strings"
 )
@@ -128,7 +127,7 @@ func PadArray(array []int, n int) []int {
 	} else {
 		return array
 	}
-	log.Println("Input: ", result, " Output: ", array)
+	//blog.Println("Input: ", result, " Output: ", array)
 	return result
 }
 
@@ -137,7 +136,7 @@ func ReverseArray(n1 []int) []int {
 	for i := len(n1) - 1; i >= 0; i-- {
 		v := n1[i]
 		j := len(n1) - 1 - i
-		log.Println(i, v, j)
+		//log.Println(i, v, j)
 		result[j] = v
 	}
 	return result
@@ -156,12 +155,12 @@ func SumArrays(n1, n2 []int) []int {
 	n1 = PadArray(n1, length)
 	n2 = PadArray(n2, length)
 
-	log.Println("Arrays: ", n1, n2)
+	// log.Println("Arrays: ", n1, n2)
 	for i := length - 1; i >= 0; i-- {
 		sum = n1[i] + n2[i] + odd
 		if sum > 9 {
 			odd = 1
-			sum -= 10
+			sum = sum % 10
 		} else {
 			odd = 0
 		}
@@ -184,6 +183,15 @@ func SumBig() []int {
 		array2 := LoadStringInArray(tmpData[i])
 		result = SumArrays(result, array2)
 	}
-	log.Println(result)
+	//log.Println(result)
 	return result
+}
+
+// JoinInts concatenate every data in the array and return the string content
+func JoinInts(data []int) string {
+	var sb strings.Builder
+	for i := 0; i < len(data); i++ {
+		sb.WriteString(strconv.Itoa(data[i]))
+	}
+	return sb.String()
 }

@@ -25,8 +25,8 @@ func ExtractCanditate(max float64) [][]float64 {
 	return array
 }
 
-func FindPythagoreanTriplet() {
-	candiates := ExtractCanditate(1000)
+func FindPythagoreanTriplet(n float64) {
+	candiates := ExtractCanditate(n)
 	var exp float64 = 2
 	for _, item := range candiates {
 		firstTwo := math.Pow(item[0], exp) + math.Pow(item[1], exp)

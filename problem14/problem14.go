@@ -5,7 +5,6 @@ import (
 )
 
 func CollatzProblem(n int) int {
-
 	counter := make([]int, n)
 	for i := 1; i < n; i++ {
 		k := i
@@ -20,7 +19,6 @@ func CollatzProblem(n int) int {
 		}
 		counter[i] = c
 	}
-
 	index := mathutils.MaxIntIndex(counter)
 	return index
 }

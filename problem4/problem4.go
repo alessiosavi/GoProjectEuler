@@ -2,8 +2,6 @@
 // Find the largest palindrome made from the product of two 3-digit numbers.
 package problem4
 
-import "log"
-
 func GenerateThreeDigitArray() []int {
 	var max int = 999
 	array := make([]int, max-99)
@@ -20,7 +18,7 @@ func CheckPalindrome(str string) bool {
 	length := len(str) - 1
 	for i := range str {
 		if str[i] != str[length-i] {
-			log.Println("", str[i], " is different from ", str[length-i])
+			//log.Println("", str[i], " is different from ", str[length-i])
 			return false
 		}
 	}

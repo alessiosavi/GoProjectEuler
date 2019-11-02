@@ -11,9 +11,7 @@ import (
 )
 
 func ExtractEvenValuedNumber(array []int64) []int64 {
-
 	var result []int64
-
 	for i := range array {
 		if array[i]%2 == 0 {
 			result = append(result, array[i])
@@ -29,14 +27,11 @@ func GenerateFibonacci(max int64) {
 	array = append(array, 1)
 	array = append(array, 2)
 	i := 2
-	for {
-		value := array[i-1] + array[i-2]
+	var value int64 = array[i-1] + array[i-2]
+	for value < max {
+		value = array[i-1] + array[i-2]
 		i++
-		if value < 4000000 {
-			array = append(array, value)
-		} else {
-			break
-		}
+		array = append(array, value)
 	}
 	log.Println(array)
 

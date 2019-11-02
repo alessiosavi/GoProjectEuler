@@ -33,5 +33,5 @@ func Test(t *testing.T) {
 
 func TestSumDiagonalInverse(t *testing.T) {
 	data := InitData()
-	t.Log(SumDiagonalInverse(data))
+	t.Log("Solution: ", SumDiagonalInverse(data))
 }

@@ -2,11 +2,6 @@ package problem13
 
 import "testing"
 
-func TestSumBig(t *testing.T) {
-	result := SumBig()
-	t.Log("Result :", result[0:10])
-}
-
 func TestPadArray(t *testing.T) {
 	array := []int{1, 2, 3, 4}
 	t.Log(PadArray(array, 5))
@@ -22,4 +17,10 @@ func TestSumArrays(t *testing.T) {
 func TestReverseArray(t *testing.T) {
 	array2 := []int{1, 2, 3, 4}
 	t.Log(ReverseArray(array2))
+}
+
+func TestSumBig(t *testing.T) {
+	result := SumBig()
+	res := result[0:10]
+	t.Log("Result :", JoinInts(res))
 }
