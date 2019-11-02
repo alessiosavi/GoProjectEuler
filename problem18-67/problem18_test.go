@@ -38,6 +38,15 @@ func TestFindPathByIndex(t *testing.T) {
 	FindPathByIndex(LoadBigDataInMatrix(data))
 }
 
+func TestProblem67(t *testing.T) {
+	matrix := LoadBigDataInMatrix(problem67)
+	BacktrackMatrix(matrix)
+}
+func TestProblem18(t *testing.T) {
+	matrix := LoadBigDataInMatrix(data)
+	BacktrackMatrix(matrix)
+}
+
 /*
 Matrix of index related to highest value
 [0]
