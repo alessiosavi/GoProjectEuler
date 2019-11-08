@@ -1,7 +1,7 @@
 package problem4
 
 import (
-	"sort"
+	"log"
 	"strconv"
 	"testing"
 )
@@ -11,29 +11,30 @@ func TestCheckPalindrome(t *testing.T) {
 	t.Log(CheckPalindrome("abcba"))
 }
 func TestGenerateThreeDigitArray(t *testing.T) {
-	data1 := GenerateThreeDigitArray()
-	var data2 []int = make([]int, len(data1))
-	copy(data2, data1)
-	data2[0] = -999
-	// t.Log(data1)
-	// t.Log(data2)
-	var result []int
-	for i := range data1 {
-		for j := range data2 {
-			result = append(result, data1[i]*data2[j])
+	k := 0
+	for i := 999999; i > 100000; i-- {
+		for j := 999999; j > 100000; j-- {
+			k++
+			n := strconv.Itoa(i * j)
+			if CheckPalindrome(n) {
+				log.Println("Palindrome -> ", n, " Itearazioni: ", k)
+				return
+			}
 		}
 	}
-	sort.Ints(result)
-	var stringArray []string = make([]string, len(result))
-	for i := range result {
-		stringArray[i] = strconv.Itoa(result[i])
-	}
-	// t.Log(cap(result))
-	// t.Log(cap(stringArray))
-	for i := len(stringArray) - 1; i > -1; i-- {
-		if CheckPalindrome(stringArray[i]) {
-			t.Log(stringArray[i])
-			return
+}
+
+func TestWin(t *testing.T) {
+	k := 0
+	for i := 999; i > 900; i-- {
+		for j := 999; j > 900; j-- {
+			k++
+			n := strconv.Itoa(i * j)
+			if CheckPalindrome(n) {
+				log.Println(n)
+				return
+			}
 		}
 	}
+
 }
