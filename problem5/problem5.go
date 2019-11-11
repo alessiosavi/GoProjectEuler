@@ -3,7 +3,7 @@
 package problem5
 
 func CheckSequentialDivisor(n, target int) bool {
-	for i := 1; i <= target; i++ {
+	for i := target; i > 1; i-- {
 		if n%i != 0 {
 			return false
 		}

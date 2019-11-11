@@ -12,8 +12,8 @@ func TestCheckPalindrome(t *testing.T) {
 }
 func TestGenerateThreeDigitArray(t *testing.T) {
 	k := 0
-	for i := 999999; i > 100000; i-- {
-		for j := 999999; j > 100000; j-- {
+	for i := 99999999; i > 90000000; i-- {
+		for j := 99999999; j > 90000000; j-- {
 			k++
 			n := strconv.Itoa(i * j)
 			if CheckPalindrome(n) {
