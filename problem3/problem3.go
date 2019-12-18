@@ -14,7 +14,6 @@ func CalculateMaxPrimeFactor(n int64) int64 {
 	for n%2 == 0 {
 		n /= 2
 	}
-
 	for i = 3; float64(i) <= math.Sqrt(float64(n)); i += 2 {
 		for n%i == 0 {
 			n = n / i
