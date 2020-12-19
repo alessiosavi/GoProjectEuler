@@ -2,6 +2,7 @@ github.com/alessiosavi/GoGPUtils v0.0.18 h1:WWR9edS8fYZCCJLKL6myHgeeXy2MxRhkiBw2
 github.com/alessiosavi/GoGPUtils v0.0.18/go.mod h1:DRI9kEkT/ZZdHr+ESFOMfqWPHsO9WgjzyVXdfOGN83M=
 github.com/alessiosavi/GoGPUtils v0.0.19 h1:UmdnD1POyYHvIqFjMd5Q1Z+dxePM9ZlAXbXoXeiscxM=
 github.com/alessiosavi/GoGPUtils v0.0.19/go.mod h1:x2jypfP3TbcBuzww9WGIVnDhTNMGvfo8ElTuxkDmj4c=
+github.com/alessiosavi/GoGPUtils v0.0.30/go.mod h1:DRI9kEkT/ZZdHr+ESFOMfqWPHsO9WgjzyVXdfOGN83M=
 github.com/alessiosavi/ahocorasick v0.0.3/go.mod h1:GlX7JXZTgFoEccsMg5JZVpjoe+NW7Nk+3b5ldtGP5oU=
 golang.org/x/crypto v0.0.0-20190308221718-c2843e01d9a2/go.mod h1:djNgcEr1/C05ACkg1iLfiJU5Ep61QUkGW8qpdssI0+w=
 golang.org/x/net v0.0.0-20190620200207-3b0461eec859/go.mod h1:z5CRVTTTmAJ677TzLLGU+0bjPO0LkuOLi4/5GtJWs/s=
