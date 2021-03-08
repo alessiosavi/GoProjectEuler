@@ -9,5 +9,5 @@ func TestMultiplyArray(t *testing.T) {
 
 func TestSplitStringInArray(t *testing.T) {
 	temp := SplitStringInArray(data)
-	MultiplyNearestNumber(temp, 13)
+	t.Log(MultiplyNearestNumber(temp, 13))
 }

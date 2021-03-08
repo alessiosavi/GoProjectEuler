@@ -1,6 +1,9 @@
 package problem7
 
-import "math"
+import (
+	"log"
+	"math"
+)
 
 func IsPrimitive(n int) bool {
 	if n <= 3 {
@@ -17,4 +20,18 @@ func IsPrimitive(n int) bool {
 		i += 6
 	}
 	return true
+}
+
+func Win() {
+	counter := 0
+	i := 0
+	prime := 0
+	for counter != 10001 {
+		if IsPrimitive(i) {
+			counter++
+			prime = i
+		}
+		i++
+	}
+	log.Println(prime)
 }

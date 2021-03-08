@@ -4,6 +4,7 @@
 package problem3
 
 import (
+	"log"
 	"math"
 )
 
@@ -23,4 +24,9 @@ func CalculateMaxPrimeFactor(n int64) int64 {
 		maxPrime = n
 	}
 	return maxPrime
+}
+
+func Win() {
+	data := CalculateMaxPrimeFactor(600851475143)
+	log.Println(data)
 }

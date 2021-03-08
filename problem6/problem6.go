@@ -17,7 +17,6 @@ func CalculateSequentialPow(max int) int64 {
 		iF := float64(i)
 		total += int64(math.Pow(iF, 2))
 	}
-	log.Println("sum of the squares for ", max, " is ", total)
 	return total
 }
 
@@ -27,7 +26,10 @@ func CalculateSumPow(max int) int64 {
 		total += i
 	}
 	data := math.Pow(float64(total), 2)
-	log.Println(data)
-	log.Println("square of the sum ", max, " is ", total)
 	return int64(data)
+}
+
+func Win() {
+	win := CalculateSumPow(100) - CalculateSequentialPow(100)
+	log.Println(win)
 }

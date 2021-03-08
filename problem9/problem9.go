@@ -6,7 +6,7 @@
 package problem9
 
 import (
-	"fmt"
+	"log"
 	"math"
 )
 
@@ -30,8 +30,13 @@ func FindPythagoreanTriplet(n float64) {
 	var exp float64 = 2
 	for _, item := range candiates {
 		firstTwo := math.Pow(item[0], exp) + math.Pow(item[1], exp)
-		if firstTwo == math.Pow(item[2], exp) {
-			fmt.Printf("%f\n", (item[0] * item[1] * item[2]))
+		if firstTwo == math.Pow(item[2], exp) && item[0] != 0 && item[1] != 0 && item[2] != 0 {
+			log.Printf("%f\n", (item[0] * item[1] * item[2]))
+			break
 		}
 	}
+}
+
+func Win() {
+	FindPythagoreanTriplet(1000)
 }

@@ -6,6 +6,8 @@ package problem2
 
 import (
 	"log"
+
+	mathutils "github.com/alessiosavi/GoGPUtils/math"
 )
 
 func ExtractEvenValuedNumber(array []int64) []int64 {
@@ -30,6 +32,12 @@ func GenerateFibonacci(max int64) []int64 {
 		i++
 		array = append(array, value)
 	}
-	log.Println(array)
 	return array
+}
+
+func Win() {
+	array := GenerateFibonacci(4000000)
+	onlyEven := ExtractEvenValuedNumber(array)
+	win := mathutils.SumInt64Array(onlyEven)
+	log.Println(win)
 }

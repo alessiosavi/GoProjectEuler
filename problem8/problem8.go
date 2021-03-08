@@ -58,6 +58,10 @@ func MultiplyNearestNumber(array []int, number int) int {
 	}
 
 	sort.Ints(total)
-	log.Println(total[len(total)-1])
 	return total[len(total)-1]
+}
+
+func Win() {
+	temp := SplitStringInArray(data)
+	log.Println(MultiplyNearestNumber(temp, 13))
 }

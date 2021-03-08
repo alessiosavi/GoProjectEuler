@@ -1,5 +1,5 @@
 module github.com/alessiosavi/ProjectEulerGo
 
-go 1.13
+go 1.15
 
-require github.com/alessiosavi/GoGPUtils v0.0.19
+require github.com/alessiosavi/GoGPUtils v0.0.30

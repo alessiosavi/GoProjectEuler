@@ -5,14 +5,9 @@
 package problem2
 
 import (
-	"log"
 	"testing"
-
-	mathutils "github.com/alessiosavi/GoGPUtils/math"
 )
 
 func TestGenerateFibonacci(t *testing.T) {
-	array := GenerateFibonacci(4000000)
-	onlyEven := ExtractEvenValuedNumber(array)
-	log.Println(mathutils.SumInt64Array(onlyEven))
+	Win()
 }

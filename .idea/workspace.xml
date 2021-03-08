@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="addf1d9a-ef46-45a6-9603-953fb851a40e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/problem1/problem_1.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/problem1/problem_1_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/problem2/problem2.go" beforeDir="false" afterPath="$PROJECT_DIR$/problem2/problem2.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/problem2/problem2_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/problem2/problem2_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/problem3/problem3.go" beforeDir="false" afterPath="$PROJECT_DIR$/problem3/problem3.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/problem4/problem4.go" beforeDir="false" afterPath="$PROJECT_DIR$/problem4/problem4.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/problem5/problem5.go" beforeDir="false" afterPath="$PROJECT_DIR$/problem5/problem5.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/problem5/problem5_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/problem5/problem5_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/problem6/problem6.go" beforeDir="false" afterPath="$PROJECT_DIR$/problem6/problem6.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/problem7/problem7.go" beforeDir="false" afterPath="$PROJECT_DIR$/problem7/problem7.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/problem8/problem8.go" beforeDir="false" afterPath="$PROJECT_DIR$/problem8/problem8.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/problem8/problem8_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/problem8/problem8_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/problem9/problem9.go" beforeDir="false" afterPath="$PROJECT_DIR$/problem9/problem9.go" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GOROOT" path="C:\Go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProjectId" id="1l4nGVBWnRQGgmC0Nj1b9ubiFTi" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1051" y="500" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606865139686">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1051" y="500" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1606865139686" />
+  </component>
+</project>
